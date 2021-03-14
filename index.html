@@ -20,10 +20,11 @@
 <body>
 
 <p>Enter no more than 6 characters.It will print all possible unique combinations of characters</p>
-<p></p>
+
 <form  id="fr">
+    <label for="inp1"></label>
     <input type="text" name="inp" id="inp1">
-    <button type="button" onclick="clickBut()"id="sub">Submit</button>
+    <button type="button" onclick="clickBut()" id="sub">Submit</button>
 </form>
 <p id="demo"></p>
 <p id="demo1"></p>
@@ -89,16 +90,16 @@
         console.log(text);
 
 
-        function Factorial(n) {
+        function factorial(n) {
             if (n === 0) {
 
                 return 1;
             }
             else {
-                return n * Factorial( n - 1 );
+                return n * factorial( n - 1 );
             }
         }
-        num=Factorial(arr.length);
+        num=factorial(arr.length);
 
 
         do{
